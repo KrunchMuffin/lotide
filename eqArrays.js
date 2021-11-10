@@ -6,7 +6,9 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-function eqArrays(arr1, arr2) { return !!arr1 && !!arr2 && !(arr1 < arr2 || arr2 < arr1); }
+const eqArrays = function(arr1, arr2) {
+  return !!arr1 && !!arr2 && !(arr1 < arr2 || arr2 < arr1);
+};
 
 assertEqual(eqArrays([1, 2, 3], [1, 3, 4]), false);
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
