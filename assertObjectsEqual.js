@@ -19,5 +19,5 @@ const assertObjectsEqual = function(actual, expected) {
   } else {
     console.log(`Objects are NOT equal: ${inspect(actual)} ${inspect(expected)}`);
   }
-}
-;
+};
+assertObjectsEqual();
